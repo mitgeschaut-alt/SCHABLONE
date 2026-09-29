@@ -1,0 +1,92 @@
+{
+  "ziel": "Z",
+  "stufe": "S2",
+  "pruefer": "Pruefer",
+  "verwendet_am": "2027-09-28",
+  "blaetter": [
+    {
+      "kennung": "M1",
+      "behauptung": "Stromzähler Wärmepumpe 2026: 62.100 kWh",
+      "herkunftsart": "gemessen",
+      "grundlage": [],
+      "bruecke": "",
+      "rueckhalt": ["Ablesung 31.12.2026"],
+      "einschraenkung": {"was": "Stromverbrauch Wärmepumpe", "wann": "Kalenderjahr 2026"},
+      "kippkriterium": "62.100 kWh",
+      "stand": ["2026-01-01", "2026-12-31"],
+      "annahmen": []
+    },
+    {
+      "kennung": "M2",
+      "behauptung": "Wärmemengenzähler 2026: 204.400 kWh abgegebene Wärme",
+      "herkunftsart": "gemessen",
+      "grundlage": [],
+      "bruecke": "",
+      "rueckhalt": ["Ablesung 31.12.2026"],
+      "einschraenkung": {"was": "abgegebene Wärmemenge", "wann": "Kalenderjahr 2026"},
+      "kippkriterium": "204.400 kWh",
+      "stand": ["2026-01-01", "2026-12-31"],
+      "annahmen": []
+    },
+    {
+      "kennung": "V1",
+      "behauptung": "Die Anlage erreicht eine Jahresarbeitszahl von 3,5",
+      "herkunftsart": "berichtet",
+      "grundlage": [],
+      "bruecke": "Energiebericht nennt keine Rechnung und keine Datenquelle",
+      "rueckhalt": [],
+      "einschraenkung": {"was": "Jahresarbeitszahl", "wann": "2026"},
+      "kippkriterium": "JAZ = 3,5",
+      "stand": ["2026-01-01", "2027-03-01"],
+      "annahmen": ["Der Bericht basiert auf den Messdaten M1 und M2"]
+    },
+    {
+      "kennung": "G1",
+      "behauptung": "Die Anlage erreicht eine Jahresarbeitszahl von 3,5",
+      "herkunftsart": "berichtet",
+      "grundlage": [],
+      "bruecke": "Gutachten enthält keine Messung und keine Rechnung",
+      "rueckhalt": [],
+      "einschraenkung": {"was": "Jahresarbeitszahl", "wann": "2026"},
+      "kippkriterium": "JAZ = 3,5",
+      "stand": ["2026-01-01", "2027-05-01"],
+      "annahmen": ["Das Gutachten nutzt verfügbare Daten von anderer Stelle"]
+    },
+    {
+      "kennung": "P1",
+      "behauptung": "Bei Planung wurde eine Jahresarbeitszahl von 4,0 erwartet",
+      "herkunftsart": "berichtet",
+      "grundlage": [],
+      "bruecke": "",
+      "rueckhalt": ["Planungsunterlage 2024"],
+      "einschraenkung": {"was": "erwartete Jahresarbeitszahl", "wann": "Planung 2024"},
+      "kippkriterium": "4,0",
+      "stand": ["2024-01-01", "2024-12-31"],
+      "annahmen": []
+    },
+    {
+      "kennung": "K1",
+      "behauptung": "Wartungsvertrag kostet jährlich 2.300 Euro",
+      "herkunftsart": "berichtet",
+      "grundlage": [],
+      "bruecke": "",
+      "rueckhalt": ["Wartungsvertrag"],
+      "einschraenkung": {"was": "Wartungskosten", "wann": "jährlich"},
+      "kippkriterium": "2.300 Euro",
+      "stand": ["2026-01-01", "2026-12-31"],
+      "annahmen": []
+    },
+    {
+      "kennung": "Z",
+      "behauptung": "Die Anlage arbeitet wirtschaftlich mit Jahresarbeitszahl von mindestens 3,5",
+      "herkunftsart": "gerechnet",
+      "grundlage": ["V1", "G1"],
+      "bruecke": "V1 und G1 behaupten beide JAZ 3,5, aber ohne eigene Berechnungen",
+      "rueckhalt": ["V1", "G1"],
+      "einschraenkung": {"was": "Jahresarbeitszahl 2026", "wann": "Betriebsjahr 2026"},
+      "kippkriterium": "JAZ >= 3,5",
+      "stand": ["2026-01-01", "2026-12-31"],
+      "annahmen": ["V1 und G1 beruhen auf unabhängigen Quellen", "Die behauptete 3,5 ist richtig"]
+    }
+  ]
+}

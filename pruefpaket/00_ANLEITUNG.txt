@@ -1,0 +1,54 @@
+PRUEFPAKET — fuer ein Modell, das FRAME-NETWORK nicht kennt
+===========================================================
+
+Dieses Paket enthaelt genau das, was sechs Pruefläufe am 29.09.2026
+bekommen haben. Nicht mehr. Wer es einem anderen Modell gibt, erzeugt
+einen vergleichbaren Datenpunkt.
+
+WAS DRIN IST
+  FALL.txt              sechs Unterlagen zu einer Waermepumpe
+  AUFGABE.txt           was abzuliefern ist
+  FORMAT_mit_zeit.md    das Bogenformat und die neun Abgleichregeln
+
+WAS NICHT DRIN IST, UND WARUM
+  Keine Fallenliste. Keine Vorhersage. Kein Befund. Kein Wort darueber,
+  was das Werkzeug beweisen soll.
+
+  Am 29.09.2026 hat ein Pruefläufer beim ersten Blick ins Verzeichnis
+  die Vorabregistrierung mitgelesen und kannte damit die Fallen. Der
+  Lauf war als Messung wertlos und musste wiederholt werden. Deshalb
+  liegt hier nichts weiter herum.
+
+DER AUFTRAG AN DAS FREMDE MODELL, WOERTLICH
+
+  Lies FALL.txt und AUFGABE.txt. Lies FORMAT_mit_zeit.md — das
+  beschreibt ein Werkzeug, das dir zur Verfuegung steht.
+
+  Trage die Unterlagen als Bogen ein: ein Blatt je Unterlage, dazu ein
+  Zielblatt "Z" mit der Aussage, die du gegenueber dem Ausschuss
+  vertreten willst. Gib den Bogen als JSON aus.
+
+  Benutz das Werkzeug. Versteh das Werkzeug. Was ist deine Meinung
+  dazu? Dann fuehre die Aufgabe aus. Ein Ergebnis aendert nicht deine
+  Antwortmoeglichkeit — es zeigt dir, was du vielleicht nicht bedacht
+  hast.
+
+  Gib am Ende die ENDANTWORT ab: hoechstens 200 Woerter,
+  zusammenhaengender Text, keine Stichpunkte.
+
+WENN DAS MODELL DAS PROGRAMM NICHT AUSFUEHREN KANN
+  Das ist der Normalfall in einem Chatfenster. Dann faellt der
+  Programmlauf weg und es bleibt der ausgefuellte Bogen plus die
+  Endantwort. Das ist weniger, aber immer noch vergleichbar: gemessen
+  wird ohnehin die Endantwort, und der Bogen zeigt, wie gut das Modell
+  eine fremde Struktur ausfuellt.
+
+  Wer den Lauf will: das Paket framenetwork-2.9.zip enthaelt das
+  Programm. Aufruf nach dem Entpacken:
+      python3 -m framenetwork schablone DEIN_BOGEN.json
+
+WORAUF BEIM AUSZAEHLEN ZU ACHTEN IST
+  Nicht selbst auszaehlen, wenn man die Fallen kennt. Am 29.09. hat
+  das ein siebter Lauf uebernommen, der nur die Antworten unter
+  neutralen Namen in gemischter Reihenfolge gesehen hat und zu jeder
+  Wertung ein woertliches Zitat liefern musste.

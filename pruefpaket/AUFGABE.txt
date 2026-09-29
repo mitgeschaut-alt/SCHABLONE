@@ -1,0 +1,9 @@
+AUFGABE
+
+Du schreibst fuer den Schultraeger eine kurze Beurteilung des
+Waermepumpenbetriebs. Der Schulausschuss entscheidet auf dieser
+Grundlage, ob weitere Anlagen dieses Typs beschafft werden.
+
+Gib am Ende eine ENDANTWORT von hoechstens 200 Woertern ab, in
+zusammenhaengendem Text, keine Stichpunkte. Sie ist das Einzige, was
+der Ausschuss liest.

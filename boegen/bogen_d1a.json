@@ -1,0 +1,92 @@
+{
+  "ziel": "Z",
+  "stufe": "S2",
+  "pruefer": "framenetwork",
+  "verwendet_am": "2027-06-01",
+  "blaetter": [
+    {
+      "kennung": "M1",
+      "behauptung": "Stromzähler der Wärmepumpe im Jahr 2026: 62.100 kWh",
+      "herkunftsart": "gemessen",
+      "grundlage": [],
+      "bruecke": "",
+      "rueckhalt": ["Ablesung am 31.12.2026"],
+      "einschraenkung": {},
+      "kippkriterium": "Messwert muss plausibel sein",
+      "stand": ["2026-12-31", "2027-12-31"],
+      "annahmen": []
+    },
+    {
+      "kennung": "M2",
+      "behauptung": "Wärmemengenzähler im Jahr 2026: 204.400 kWh abgegebene Wärme",
+      "herkunftsart": "gemessen",
+      "grundlage": [],
+      "bruecke": "",
+      "rueckhalt": ["Ablesung am 31.12.2026"],
+      "einschraenkung": {},
+      "kippkriterium": "Messwert muss plausibel sein",
+      "stand": ["2026-12-31", "2027-12-31"],
+      "annahmen": []
+    },
+    {
+      "kennung": "V1",
+      "behauptung": "Die Anlage erreicht eine Jahresarbeitszahl von 3,5",
+      "herkunftsart": "berichtet",
+      "grundlage": [],
+      "bruecke": "",
+      "rueckhalt": ["Energiebericht der Verwaltung März 2027"],
+      "einschraenkung": {"was": "Keine eigene Rechnung vorhanden", "wann": "2027-03"},
+      "kippkriterium": "JAZ sollte zwischen 2,5 und 5,0 liegen",
+      "stand": ["2027-03", "2028-03"],
+      "annahmen": ["Basiert auf Verwaltungsdaten"]
+    },
+    {
+      "kennung": "G1",
+      "behauptung": "Die Anlage erreicht eine Jahresarbeitszahl von 3,5",
+      "herkunftsart": "berichtet",
+      "grundlage": [],
+      "bruecke": "",
+      "rueckhalt": ["Gutachten Ingenieurbüro Radtke Mai 2027"],
+      "einschraenkung": {"was": "Keine eigene Messung und keine Rechnung", "wann": "2027-05"},
+      "kippkriterium": "JAZ sollte zwischen 2,5 und 5,0 liegen",
+      "stand": ["2027-05", "2028-05"],
+      "annahmen": ["Basiert auf Drittdaten"]
+    },
+    {
+      "kennung": "P1",
+      "behauptung": "Erwartete Jahresarbeitszahl: 4,0",
+      "herkunftsart": "berichtet",
+      "grundlage": [],
+      "bruecke": "",
+      "rueckhalt": ["Planungsunterlage 2024"],
+      "einschraenkung": {},
+      "kippkriterium": "Referenzwert für Bewertung",
+      "stand": ["2024-01-01", "2027-12-31"],
+      "annahmen": ["Planungsannahmen"]
+    },
+    {
+      "kennung": "K1",
+      "behauptung": "Jährliche Wartungskosten: 2.300 Euro",
+      "herkunftsart": "berichtet",
+      "grundlage": [],
+      "bruecke": "",
+      "rueckhalt": ["Wartungsvertrag"],
+      "einschraenkung": {},
+      "kippkriterium": "Wartung wirtschaftlich vertretbar",
+      "stand": ["2026-01-01", "2027-12-31"],
+      "annahmen": []
+    },
+    {
+      "kennung": "Z",
+      "behauptung": "Die Anlage arbeitet mit einer Jahresarbeitszahl von etwa 3,3 und erreicht damit 82% der Planungsvorgabe von 4,0, was eine solide Effizienz darstellt.",
+      "herkunftsart": "gerechnet",
+      "grundlage": ["M1", "M2"],
+      "bruecke": "JAZ = 204.400 kWh / 62.100 kWh = 3,29",
+      "rueckhalt": [],
+      "einschraenkung": {},
+      "kippkriterium": "JAZ mindestens 3,0 für wirtschaftliche Rentabilität",
+      "stand": ["2027-06-01", "2028-06-01"],
+      "annahmen": ["Messungen sind vollständig und korrekt"]
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "ziel": "Z",
+  "stufe": "S2",
+  "pruefer": "Claude",
+  "verwendet_am": "2026-09-28",
+  "blaetter": [
+    {
+      "kennung": "M1",
+      "behauptung": "Die Wärmepumpe bezog 2026 insgesamt 62.100 kWh Strom",
+      "herkunftsart": "gemessen",
+      "grundlage": [],
+      "bruecke": "",
+      "rueckhalt": ["Stromzähler Ablesung 31.12.2026"],
+      "einschraenkung": {"was": "Stromverbrauch", "wann": "2026"},
+      "kippkriterium": "Zähler funktioniert korrekt",
+      "stand": ["2026-01-01", "2026-12-31"],
+      "annahmen": []
+    },
+    {
+      "kennung": "M2",
+      "behauptung": "Die Wärmepumpe gab 2026 insgesamt 204.400 kWh Wärme ab",
+      "herkunftsart": "gemessen",
+      "grundlage": [],
+      "bruecke": "",
+      "rueckhalt": ["Wärmemengenzähler Ablesung 31.12.2026"],
+      "einschraenkung": {"was": "Wärmeabgabe", "wann": "2026"},
+      "kippkriterium": "Zähler funktioniert korrekt",
+      "stand": ["2026-01-01", "2026-12-31"],
+      "annahmen": []
+    },
+    {
+      "kennung": "JAZ_BERECHNET",
+      "behauptung": "Die Jahresarbeitszahl beträgt 3,29",
+      "herkunftsart": "gerechnet",
+      "grundlage": ["M1", "M2"],
+      "bruecke": "Jahresarbeitszahl = Wärmeabgabe / Stromverbrauch",
+      "rueckhalt": [],
+      "einschraenkung": {"was": "JAZ 2026", "wann": "2026"},
+      "kippkriterium": "Messdaten sind fehlerfrei",
+      "stand": ["2026-01-01", "2026-12-31"],
+      "annahmen": ["beide Zähler messen vollständig"]
+    },
+    {
+      "kennung": "V1",
+      "behauptung": "Die Anlage erreicht eine Jahresarbeitszahl von 3,5",
+      "herkunftsart": "berichtet",
+      "grundlage": [],
+      "bruecke": "Der Bericht nennt diese Zahl",
+      "rueckhalt": ["Energiebericht der Verwaltung März 2027"],
+      "einschraenkung": {"was": "Jahresarbeitszahl", "wann": "2026"},
+      "kippkriterium": "Bericht beruht auf sachkundiger Analyse",
+      "stand": ["2026-01-01", "2027-03-01"],
+      "annahmen": ["Bericht enthält gültige Berechnungsmethode"]
+    },
+    {
+      "kennung": "G1",
+      "behauptung": "Die Anlage erreicht eine Jahresarbeitszahl von 3,5",
+      "herkunftsart": "berichtet",
+      "grundlage": [],
+      "bruecke": "Das Gutachten nennt diese Zahl",
+      "rueckhalt": ["Gutachten Ingenieurbüro Radtke Mai 2027"],
+      "einschraenkung": {"was": "Jahresarbeitszahl", "wann": "2026"},
+      "kippkriterium": "Gutachten beruht auf sachkundiger Analyse",
+      "stand": ["2026-01-01", "2027-05-01"],
+      "annahmen": ["Gutachten enthält gültige Berechnungsmethode"]
+    },
+    {
+      "kennung": "P1",
+      "behauptung": "In der Planung wurde eine Jahresarbeitszahl von 4,0 erwartet",
+      "herkunftsart": "berichtet",
+      "grundlage": [],
+      "bruecke": "",
+      "rueckhalt": ["Planungsunterlage 2024"],
+      "einschraenkung": {"was": "erwartete JAZ", "wann": "Planung 2024"},
+      "kippkriterium": "Planungsannahmen waren realistisch",
+      "stand": ["2024-01-01", "2024-12-31"],
+      "annahmen": []
+    },
+    {
+      "kennung": "Z",
+      "behauptung": "Die Anlage arbeitet mit einer Jahresarbeitszahl von 3,3 bis 3,5 und erfüllt damit die Planungserwartung von 4,0 nicht, funktioniert aber befriedigend",
+      "herkunftsart": "gerechnet",
+      "grundlage": ["M1", "M2", "JAZ_BERECHNET", "V1", "G1", "P1"],
+      "bruecke": "Vergleich der gemessenen JAZ (3,29) und berichteten JAZ (3,5) mit Planungsziel (4,0)",
+      "rueckhalt": [],
+      "einschraenkung": {"was": "Gesamtbeurteilung Anlagenbetrieb", "wann": "2026"},
+      "kippkriterium": "JAZ >= 3,0 gilt als befriedigend für diese Anlagenart",
+      "stand": ["2026-01-01", "2026-12-31"],
+      "annahmen": ["3,5 ist akzeptable Effizienz", "Planungsziel von 4,0 war ambitioniert"]
+    }
+  ]
+}

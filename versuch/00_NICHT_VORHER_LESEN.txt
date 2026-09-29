@@ -1,0 +1,14 @@
+ACHTUNG — DIESER ORDNER VERDIRBT JEDE WIEDERHOLUNG
+==================================================
+
+Hier liegen die Vorabregistrierungen, die Fallen und die Antworten der
+elf bisherigen Laeufe.
+
+Wer den Versuch selbst wiederholen will, oeffnet diesen Ordner ERST
+DANACH. Das Material zum Wiederholen liegt in ../pruefpaket/.
+
+Das ist kein Formalismus. Am 29.09.2026 hat ein Pruefläufer beim
+ersten Blick ins Verzeichnis die Vorabregistrierung mitgelesen, kannte
+damit die fuenf Fallen und meldete das von sich aus. Der Lauf war als
+Messung wertlos und musste wiederholt werden. Deshalb sind die beiden
+Ordner jetzt getrennt.

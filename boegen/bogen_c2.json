@@ -1,0 +1,92 @@
+{
+  "ziel": "Z",
+  "stufe": "S2",
+  "pruefer": "Claude",
+  "verwendet_am": "2026-09-28",
+  "blaetter": [
+    {
+      "kennung": "M1",
+      "behauptung": "Der Stromzähler zeigt einen Bezug von 62.100 kWh im Betriebsjahr 2026",
+      "herkunftsart": "gemessen",
+      "grundlage": [],
+      "bruecke": "Direktmessung am Stromzähler der Wärmepumpe, Ablesung 31.12.2026",
+      "rueckhalt": ["Ablesung am letzten Tag des Betriebsjahres"],
+      "einschraenkung": {"was": "Zählerfehler oder Kalibrierungsabweichung möglich", "wann": "bei fehlender regelmäßiger Überprüfung"},
+      "kippkriterium": "Zählerstandsabweichung über 2% bei Überprüfung",
+      "stand": ["2026-01-01", "2026-12-31"],
+      "annahmen": ["Zähler ist korrekt kalibriert und funktionsfähig"]
+    },
+    {
+      "kennung": "M2",
+      "behauptung": "Der Wärmemengenzähler zeigt eine abgegebene Wärme von 204.400 kWh im Betriebsjahr 2026",
+      "herkunftsart": "gemessen",
+      "grundlage": [],
+      "bruecke": "Direktmessung am Wärmemengenzähler, Ablesung 31.12.2026",
+      "rueckhalt": ["Ablesung am letzten Tag des Betriebsjahres"],
+      "einschraenkung": {"was": "Messunsicherheit je nach Zählertyp und Betriebsbedingungen", "wann": "bei extremen Temperaturgradienten"},
+      "kippkriterium": "Zählerstandsabweichung über 2% bei Überprüfung",
+      "stand": ["2026-01-01", "2026-12-31"],
+      "annahmen": ["Zähler ist korrekt kalibriert", "Wärmeträgerfluss ist erfasst"]
+    },
+    {
+      "kennung": "V1",
+      "behauptung": "Die Anlage erreicht eine Jahresarbeitszahl von 3,5 laut Verwaltungsbericht",
+      "herkunftsart": "berichtet",
+      "grundlage": [],
+      "bruecke": "Energiebericht der Verwaltung vom März 2027",
+      "rueckhalt": ["Verwaltungsbericht nennt keine eigene Rechnung"],
+      "einschraenkung": {"was": "Keine Herleitung der Berechnung angegeben", "wann": "März 2027"},
+      "kippkriterium": "Bericht beruht auf fehlerhaften Eingangsdaten",
+      "stand": ["2026-01-01", "2027-03-31"],
+      "annahmen": ["Bericht stützt sich auf verfügbare Messdaten"]
+    },
+    {
+      "kennung": "G1",
+      "behauptung": "Die Anlage erreicht eine Jahresarbeitszahl von 3,5 laut Gutachten",
+      "herkunftsart": "berichtet",
+      "grundlage": [],
+      "bruecke": "Gutachten Ingenieurbüro Radtke vom Mai 2027",
+      "rueckhalt": ["Gutachten enthält keine eigene Messung und keine Rechnung"],
+      "einschraenkung": {"was": "Keine unabhängige Überprüfung oder Herleitung", "wann": "Mai 2027"},
+      "kippkriterium": "Gutachten beruht auf falschen oder veralteten Eingangsdaten",
+      "stand": ["2026-01-01", "2027-05-31"],
+      "annahmen": ["Gutachten stützt sich auf Verwaltungsbericht oder ähnliche Quellen"]
+    },
+    {
+      "kennung": "P1",
+      "behauptung": "Die erwartete Jahresarbeitszahl beträgt 4,0",
+      "herkunftsart": "gerechnet",
+      "grundlage": [],
+      "bruecke": "Planungsunterlage vom Jahr 2024",
+      "rueckhalt": ["Planungswert für Betriebsbedingungen unter Standard-Annahmen"],
+      "einschraenkung": {"was": "Planungswert unter idealen Bedingungen, nicht die tatsächliche Realität", "wann": "2024"},
+      "kippkriterium": "Unterschied zwischen Planung und Realität über 10%",
+      "stand": ["2024-01-01", "2024-12-31"],
+      "annahmen": ["Planungswerte basieren auf Herstellerangaben und Standard-Betriebsbedingungen"]
+    },
+    {
+      "kennung": "K1",
+      "behauptung": "Der Wartungsvertrag kostet jährlich 2.300 Euro",
+      "herkunftsart": "berichtet",
+      "grundlage": [],
+      "bruecke": "Wartungsvertrag für die Wärmepumpe",
+      "rueckhalt": ["Vertragsangabe"],
+      "einschraenkung": {"was": "Kostenindikator für Instandhaltung, nicht für Leistung", "wann": "2026"},
+      "kippkriterium": "Wartung wird nicht durchgeführt",
+      "stand": ["2026-01-01", "2026-12-31"],
+      "annahmen": ["Wartung wird regelmäßig und fachgerecht durchgeführt"]
+    },
+    {
+      "kennung": "Z",
+      "behauptung": "Die Anlage arbeitet mit einer gemessenen Jahresarbeitszahl von etwa 3,3, was 15-18% unter der Planung von 4,0 liegt",
+      "herkunftsart": "gerechnet",
+      "grundlage": ["M1", "M2", "V1", "G1", "P1"],
+      "bruecke": "Berechnung aus gemessenen Stromdaten und Wärmemenge, Vergleich mit Planung und Berichten",
+      "rueckhalt": ["Berechnung: 204.400 kWh / 62.100 kWh = 3,29", "Übereinstimmung mit Berichten (3,5)", "Abweichung von Planungswert (4,0)"],
+      "einschraenkung": {"was": "JAZ wird durch Außentemperatur, Betriebsweise und Installationsqualität beeinflusst", "wann": "saisonal und betriebsabhängig"},
+      "kippkriterium": "JAZ sinkt unter 3,0 oder Messwerte sind inkorrekt",
+      "stand": ["2026-01-01", "2027-05-31"],
+      "annahmen": ["Messwerte sind korrekt kalibriert", "JAZ ist das richtige Leistungsmerkmal", "Jahresarbeitszahl ist aussagekräftig für Betriebsgüte"]
+    }
+  ]
+}

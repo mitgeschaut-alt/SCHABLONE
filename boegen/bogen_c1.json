@@ -1,0 +1,92 @@
+{
+  "ziel": "Z",
+  "stufe": "S2",
+  "pruefer": "Pruefer",
+  "verwendet_am": "2027-06-01",
+  "blaetter": [
+    {
+      "kennung": "M1",
+      "behauptung": "Stromzähler Wärmepumpe 2026: 62.100 kWh Stromverbrauch",
+      "herkunftsart": "gemessen",
+      "grundlage": [],
+      "bruecke": "Eingangsgröße für JAZ-Berechnung",
+      "rueckhalt": ["Zählerablesung 31.12.2026"],
+      "einschraenkung": {"was": "Nur Wärmepumpenstrom, Systemgrenze beachten", "wann": "2026"},
+      "kippkriterium": "Zählerablesung muss plausibel sein",
+      "stand": ["2026-01-01", "2026-12-31"],
+      "annahmen": ["Stromzähler funktioniert ordnungsgemäß"]
+    },
+    {
+      "kennung": "M2",
+      "behauptung": "Wärmemengenzähler 2026: 204.400 kWh Wärmeabgabe",
+      "herkunftsart": "gemessen",
+      "grundlage": [],
+      "bruecke": "Ausgangsgröße für JAZ-Berechnung",
+      "rueckhalt": ["Zählerablesung 31.12.2026"],
+      "einschraenkung": {"was": "Nur Nutzwärme am Zähler, Verteilungsverluste ggf. nicht enthalten", "wann": "2026"},
+      "kippkriterium": "Zählerablesung muss plausibel sein",
+      "stand": ["2026-01-01", "2026-12-31"],
+      "annahmen": ["Wärmemengenzähler funktioniert ordnungsgemäß"]
+    },
+    {
+      "kennung": "V1",
+      "behauptung": "Energiebericht Verwaltung (März 2027) meldet JAZ 3,5",
+      "herkunftsart": "berichtet",
+      "grundlage": [],
+      "bruecke": "Verwaltungsbericht ohne Rechenweg",
+      "rueckhalt": ["Energiebericht März 2027"],
+      "einschraenkung": {"was": "Keine eigene Rechnung dokumentiert", "wann": "März 2027"},
+      "kippkriterium": "Bericht hat keinen Rechenweg",
+      "stand": ["2027-01-01", "2027-03-31"],
+      "annahmen": ["Verwaltung hat Wert aus zuverlässiger Quelle übernommen"]
+    },
+    {
+      "kennung": "G1",
+      "behauptung": "Gutachten Radtke (Mai 2027) behauptet JAZ 3,5",
+      "herkunftsart": "berichtet",
+      "grundlage": [],
+      "bruecke": "Expertenaussage ohne Datenbasis",
+      "rueckhalt": ["Gutachten Mai 2027"],
+      "einschraenkung": {"was": "Keine eigene Messung, keine Rechnung präsentiert", "wann": "Mai 2027"},
+      "kippkriterium": "Gutachten ohne Messdaten ist unbegründet",
+      "stand": ["2027-01-01", "2027-05-31"],
+      "annahmen": ["Gutachter hat sich auf Verwaltungsdaten gestützt"]
+    },
+    {
+      "kennung": "P1",
+      "behauptung": "Planungsunterlage 2024 sieht JAZ 4,0 vor",
+      "herkunftsart": "gerechnet",
+      "grundlage": [],
+      "bruecke": "Soll-Wert für Leistungsbewertung",
+      "rueckhalt": ["Planungsunterlage 2024"],
+      "einschraenkung": {"was": "Theorie, reale Bedingungen können abweichen", "wann": "2024"},
+      "kippkriterium": "Ist-Wert < 4,0 zeigt Unterperformance",
+      "stand": ["2024-01-01", "2026-12-31"],
+      "annahmen": ["Planung basierte auf realistischen Annahmen"]
+    },
+    {
+      "kennung": "K1",
+      "behauptung": "Wartungsvertrag kostet 2.300 Euro/Jahr",
+      "herkunftsart": "gemessen",
+      "grundlage": [],
+      "bruecke": "Betriebskostenindikator",
+      "rueckhalt": ["Wartungsvertrag"],
+      "einschraenkung": {"was": "Nur Wartungskosten, nicht Energiekosten", "wann": "2026"},
+      "kippkriterium": "Information für Gesamtwirtschaftlichkeit",
+      "stand": ["2026-01-01", "2026-12-31"],
+      "annahmen": ["Vertragskonditionen sind stabil"]
+    },
+    {
+      "kennung": "Z",
+      "behauptung": "Die Wärmepumpe erreicht 2026 eine Jahresarbeitszahl von 3,29 und arbeitet damit unter dem Planungsziel von 4,0",
+      "herkunftsart": "gerechnet",
+      "grundlage": ["M1", "M2"],
+      "bruecke": "JAZ = Wärmeabgabe [M2] / Stromverbrauch [M1] = 204.400 / 62.100 = 3,288",
+      "rueckhalt": ["Direkte Messungen M1 und M2"],
+      "einschraenkung": {"was": "Berechnung ignoriert Systemverluste und Grenzdefinitionen", "wann": "2026"},
+      "kippkriterium": "JAZ 3,29 < Soll 4,0 bedeutet 18% Abweichung; auch kleiner als berichtete 3,5",
+      "stand": ["2026-01-01", "2026-12-31"],
+      "annahmen": ["Beide Zähler sind funktionsfähig und zeigen tatsächliche Werte"]
+    }
+  ]
+}

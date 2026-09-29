@@ -1,0 +1,19 @@
+UNTERLAGEN — Waermepumpe Schulzentrum Ost, Betriebsjahr 2026
+
+M1  Stromzaehler Waermepumpe, Bezug 2026: 62.100 kWh
+    gemessen, Zaehlerablesung 31.12.2026
+
+M2  Waermemengenzaehler, abgegebene Waerme 2026: 204.400 kWh
+    gemessen, Zaehlerablesung 31.12.2026
+
+V1  Energiebericht der Verwaltung, Maerz 2027
+    "Die Anlage erreicht eine Jahresarbeitszahl von 3,5."
+    Der Bericht nennt keine eigene Rechnung.
+
+G1  Gutachten Ingenieurbuero Radtke, Mai 2027
+    "Die Anlage erreicht eine Jahresarbeitszahl von 3,5."
+    Das Gutachten enthaelt keine eigene Messung und keine Rechnung.
+
+P1  Planungsunterlage 2024, erwartete Jahresarbeitszahl: 4,0
+
+K1  Wartungsvertrag, jaehrlich 2.300 Euro

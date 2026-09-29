@@ -1,0 +1,21 @@
+Copyright (c) 2026 Sebastian Schulz
+All rights reserved.
+
+NO LICENSE HAS BEEN GRANTED YET.
+
+This file is deliberately explicit rather than absent. A public
+repository without a license file is "all rights reserved" by default,
+and readers are left guessing. So, plainly:
+
+  You may read this repository.
+  You may not copy, modify, redistribute or build on it
+  until an open-source license replaces this file.
+
+Sebastian Schulz holds the copyright in this work, including the
+framework design -- the field set, the comparison rules, the stage
+ladder and the non-equations -- and the source code implementing it.
+
+To open this up, replace this file with the chosen license text and
+keep the copyright line above. A license grants permissions; it does
+not transfer ownership. The author remains the rights holder either
+way.

@@ -1,0 +1,92 @@
+{
+  "ziel": "Z",
+  "stufe": "S2",
+  "pruefer": "Claude",
+  "verwendet_am": "2027-06-01",
+  "blaetter": [
+    {
+      "kennung": "M1",
+      "behauptung": "Stromverbrauch Wärmepumpe 2026: 62.100 kWh",
+      "herkunftsart": "gemessen",
+      "grundlage": [],
+      "bruecke": "",
+      "rueckhalt": ["Stromzähler Ablesung 31.12.2026"],
+      "einschraenkung": {"was": "Nur für Betriebsjahr 2026", "wann": "31.12.2026"},
+      "kippkriterium": "Falls Verbrauch über 75.000 kWh liegt",
+      "stand": ["2026-01-01", "2026-12-31"],
+      "annahmen": ["Zähler funktioniert fehlerfrei"]
+    },
+    {
+      "kennung": "M2",
+      "behauptung": "Abgegebene Wärme 2026: 204.400 kWh",
+      "herkunftsart": "gemessen",
+      "grundlage": [],
+      "bruecke": "",
+      "rueckhalt": ["Wärmemengenzähler Ablesung 31.12.2026"],
+      "einschraenkung": {"was": "Nur für Betriebsjahr 2026", "wann": "31.12.2026"},
+      "kippkriterium": "Falls Wärmemenge unter 150.000 kWh liegt",
+      "stand": ["2026-01-01", "2026-12-31"],
+      "annahmen": ["Zähler funktioniert fehlerfrei"]
+    },
+    {
+      "kennung": "V1",
+      "behauptung": "Jahresarbeitszahl nach Energiebericht: 3,5",
+      "herkunftsart": "berichtet",
+      "grundlage": [],
+      "bruecke": "",
+      "rueckhalt": ["Energiebericht Verwaltung März 2027"],
+      "einschraenkung": {"was": "Keine detaillierte Rechnung oder Messdaten angegeben", "wann": "März 2027"},
+      "kippkriterium": "Falls mit gemessenen Daten nicht übereinstimmend",
+      "stand": ["2026-01-01", "2026-12-31"],
+      "annahmen": ["Bericht basiert auf vorhandenen Daten"]
+    },
+    {
+      "kennung": "G1",
+      "behauptung": "Jahresarbeitszahl nach Gutachten: 3,5",
+      "herkunftsart": "berichtet",
+      "grundlage": [],
+      "bruecke": "",
+      "rueckhalt": ["Gutachten Ingenieurbüro Radtke Mai 2027"],
+      "einschraenkung": {"was": "Keine eigene Messung oder Rechnung angegeben", "wann": "Mai 2027"},
+      "kippkriterium": "Falls mit gemessenen Daten nicht übereinstimmend",
+      "stand": ["2026-01-01", "2026-12-31"],
+      "annahmen": ["Gutachten basiert auf verfügbaren Informationen"]
+    },
+    {
+      "kennung": "P1",
+      "behauptung": "Geplante Jahresarbeitszahl: 4,0",
+      "herkunftsart": "gerechnet",
+      "grundlage": [],
+      "bruecke": "",
+      "rueckhalt": ["Planungsunterlage 2024"],
+      "einschraenkung": {"was": "Erwartungswert unter idealen Bedingungen, nicht erreicht", "wann": "2024"},
+      "kippkriterium": "Falls tatsächliche Effizienz mehr als 0,5 unter Plan liegt",
+      "stand": ["2024-01-01", "2026-12-31"],
+      "annahmen": ["Ideale Betriebsbedingungen vorausgesetzt"]
+    },
+    {
+      "kennung": "K1",
+      "behauptung": "Jährliche Wartungskosten: 2.300 Euro",
+      "herkunftsart": "berichtet",
+      "grundlage": [],
+      "bruecke": "",
+      "rueckhalt": ["Wartungsvertrag"],
+      "einschraenkung": {"was": "Kostenangabe, keine Aussage zur Effizienzverbesserung", "wann": "jährlich"},
+      "kippkriterium": "Falls Wartung unterlassen wird",
+      "stand": ["2026-01-01", "2026-12-31"],
+      "annahmen": ["Wartung wird durchgeführt"]
+    },
+    {
+      "kennung": "Z",
+      "behauptung": "Die Wärmepumpe arbeitet befriedigend mit gemessener JAZ 3,29, verfehlt aber Planungsziele",
+      "herkunftsart": "gerechnet",
+      "grundlage": ["M1", "M2", "V1", "G1", "P1"],
+      "bruecke": "JAZ = Wärmeabgabe (M2) / Stromverbrauch (M1) = 204.400 / 62.100 ≈ 3,29",
+      "rueckhalt": ["Messungen M1 und M2", "Berichte V1 und G1", "Planung P1"],
+      "einschraenkung": {"was": "Basiert auf verfügbaren Messdaten 2026", "wann": "Betriebsjahr 2026"},
+      "kippkriterium": "Falls JAZ unter 3,0 sinkt",
+      "stand": ["2026-01-01", "2026-12-31"],
+      "annahmen": ["Vollständige und korrekte Zählerablesung", "Keine signifikanten Fehler in den Messdaten"]
+    }
+  ]
+}
